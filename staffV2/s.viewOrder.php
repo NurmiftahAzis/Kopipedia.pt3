@@ -247,7 +247,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
                             </div>
                             <div>
                                 <p class="text-gray-600">Total Amount</p>
-                                <p class="font-semibold">RM <?php echo number_format($totalAmount, 2); ?></p>
+                                <p class="font-semibold">Rp. <?php echo number_format($totalAmount, 2); ?></p>
                             </div>
                             <div>
                                 <p class="text-gray-600">Order Type</p>
@@ -317,12 +317,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
                                         </div>
                                     </td>
                                     <td class="text-center px-4 py-2"><?php echo htmlspecialchars($item['QUANTITY']); ?></td>
-                                    <td class="text-right px-4 py-2">RM <?php echo number_format($item['SUBTOTAL'], 2); ?></td>
+                                    <td class="text-right px-4 py-2">Rp. <?php echo number_format($item['SUBTOTAL'], 2); ?></td>
                                 </tr>
                             <?php endforeach; ?>
                             <tr class="bg-pink-50">
                                 <td colspan="3" class="text-right px-4 py-2 font-semibold">Total:</td>
-                                <td class="text-right px-4 py-2 font-semibold">RM <?php echo number_format($totalAmount, 2); ?></td>
+                                <td class="text-right px-4 py-2 font-semibold">Rp. <?php echo number_format($totalAmount, 2); ?></td>
                             </tr>
                         </tbody>
                     </table>

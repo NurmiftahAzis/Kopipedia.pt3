@@ -54,7 +54,7 @@ unset($_SESSION['error']);
     <div class="flex items-center justify-center h-screen">  
         <div class="login-container p-8 rounded-lg shadow-lg w-full max-w-sm">  
             <h2 class="text-2xl font-bold mb-6 text-center login-title">Staff Login</h2>  
-            <form action="../Admin/a_regsstaff.php" method="POST">  
+            <form action="../Staff/s.manageOrder.php" method="POST">  
                 <div class="mb-4">  
                     <label for="username" class="block text-sm font-medium input-label">Username</label>  
                     <input type="text" id="username" name="username" required class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">  

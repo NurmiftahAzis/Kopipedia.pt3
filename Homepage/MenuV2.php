@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kupi Menu</title>
+    <title>Kopi Menu</title>
     <style>
         body {
             background-color: rgb(255, 191, 230);
@@ -167,7 +167,7 @@ if ($result) {
                          alt="<?= htmlspecialchars($item['K_NAME']) ?>">
                     <h3><?= htmlspecialchars($item['K_NAME']) ?></h3>
                     <p><?= htmlspecialchars($item['K_DESC']) ?></p>
-                    <div class="price">RM <?= number_format($item['K_PRICE'], 2) ?></div>
+                    <div class="price">Rp. <?= number_format($item['K_PRICE'], 2) ?></div>
                     <?php if ($loggedin): ?>
                         <form action="../Customer/c.addToCart.php" method="post">
                             <input type="hidden" name="item_id" value="<?= $item['KUPIID'] ?>">
@@ -185,4 +185,3 @@ if ($result) {
 
 </body>
 </html>
-

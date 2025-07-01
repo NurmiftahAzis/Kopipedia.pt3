@@ -64,7 +64,8 @@
                         $connection_string = "localhost:1521/xe"; // Database connection string  
 
                         // Create connection  
-                        $dbconn = oci_connect($username, $password, $connection_string);  
+                        $conn = new mysqli("localhost", "root", "", "kopipedia_db");
+
 
                         // Check connection  
                         if (!$dbconn) {  
